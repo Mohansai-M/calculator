@@ -1,0 +1,139 @@
+*:focus {
+    outline: none;
+}
+.Calci_Container
+{
+    margin: auto;
+    display: flex;
+    width:fit-content;
+    justify-content: center;
+    margin-top: 15%;
+}
+.Calci_Field
+{
+    margin-top: 2%;
+}
+.operations
+{
+      height: 100%;
+}
+.buttons_Grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 2.5%;
+  gap: 0.5rem; 
+  height: 100%;
+  margin-bottom: 2.5%;
+}
+.number_Grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.2rem;
+}
+.Extra_Grid
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.1rem; 
+  margin-top: 5%;
+  gap: 0.5rem; 
+}
+.Operation_Grid
+{
+    display: grid;
+    gap: 0.1rem; 
+    grid-template-columns: auto;
+    margin-left: 20%;
+}
+.Extra_Item
+{
+    padding: 0.25rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(96, 184, 232);
+}
+.Extra_Item:hover,.button_Item:hover
+{
+    background-color: rgb(96, 184, 232);
+    border: 0.1rem solid rgb(255, 255, 255);
+    cursor: pointer; 
+}
+.button_Item
+{
+  padding: 0.25rem;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  background-color: rgb(96, 184, 232);
+  font-size: 3rem;
+}
+button:hover
+{
+  color:  rgb(255, 255, 255);
+}
+.Zero_Item
+{
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  font-size: 3rem;
+}
+.OP_Item
+{
+    padding: 0;
+    text-align: center;
+    background-color: rgb(96, 184, 232);
+    font-size: 3rem;
+}
+.OP_Item:hover{
+    background-color: rgb(96, 184, 232);
+    border: 0.1rem solid rgb(255, 255, 255);
+    cursor: pointer; 
+}
+.Minus_OP
+{
+  grid-column: 1;
+  grid-row: 1;
+}
+.Plus_OP
+{
+  grid-column: 1;
+  grid-row: 2 ;
+}
+.Equals_OP
+{
+  grid-column: 1;
+  grid-row: 4 / span 2;
+  background-color: rgb(223, 95, 95);
+}
+.Equals_OP:hover
+{
+   background-color: rgb(223, 95, 95);
+  border: 0.1rem solid white;
+}
+button
+{
+  border-radius: 1rem;
+}
+.Calci_Field
+{
+  grid-column: 1 / -1;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: .75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: black;
+  height:6rem;
+  border-radius: 1rem;
+}
+.prev-operand {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.5rem;
+}
+
+.curr-operand {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+}
